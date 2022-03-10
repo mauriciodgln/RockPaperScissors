@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+
+
+.container-switch {
+  // position: absolute;
+  // bottom: 2rem;
+  // right: 3rem;
+  height: 3rem;
+  width: 6rem;
+  background-color: v.$green;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: v.$light;
+  border-radius: 50%;
+  top: .3rem;
+  left: .4rem;
+  transition: 500ms;
+}
+
+.switch-active {
+  left: 3.3rem;
+  background-color: v.$dark;
+}

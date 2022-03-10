@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.history {
+  height: 4rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.arrow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+
+  .line-1,
+  .line-2 {
+    position: absolute;
+    height: .15rem;
+    width: 2rem;
+    background-color: v.$dark;
+    bottom: 50%;
+    transition: 300ms;
+  }
+
+  .line-1 {
+    transform: rotate(45deg);
+    left: .84rem;
+  }
+  .line-2 {
+    transform: rotate(-45deg);
+    right: .84rem;
+  }
+
+  &.active {
+    .line-1 {
+      transform: rotate(135deg);
+    }
+    .line-2 {
+      transform: rotate(-135deg);
+    }
+  }
+}

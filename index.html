@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="build/css/app.css">
+  <title>Rock, Paper & Scissors Game</title>
+</head>
+<body class="light">
+
+  <div class="game">
+
+    <h1>Rock, Paper & Scissors</h1>
+
+    <div class="buttons">
+      <button id="rock" class="button">✊</button>
+      <button id="paper" class="button">✋</button>
+      <button id="scissors" class="button">✌️</button>
+    </div>
+
+    <div class="result-display">
+      <h2>You: <span id="userChoice"></span></h2>
+      <h2>Computer: <span id="computerChoice"></span></h2>
+      <h2>Result: <span id="resultGame"></span></h2>
+    </div>
+  </div>
+
+  <section class="page-changes">
+
+    <div id="hands-options" class="hands-options">
+
+      <div class="view-hands">
+        <div>✊</div>
+      </div>
+
+      <div class="container-hands">
+        <div class="hand-option">
+          <div>✊</div>
+          <div>✋</div>
+          <div>✌️</div>
+        </div>
+        <div class="hand-option">
+          <div>✊🏻</div>
+          <div>✋🏻</div>
+          <div>✌🏻</div>
+        </div>
+        <div class="hand-option">
+          <div>✊🏽</div>
+          <div>✋🏽</div>
+          <div>✌🏽</div>
+        </div>
+        <div class="hand-option">
+          <div>✊🏿</div>
+          <div>✋🏿</div>
+          <div>✌🏿</div>
+        </div>
+        <div class="close-hands">
+          <span>x</span>
+        </div>
+      </div>
+
+    </div>
+  
+    <div class="history">
+      <div class="arrow">
+        <span class="line-1"></span>
+        <span class="line-2"></span>
+      </div>
+      <div class="page-history"></div>
+    </div>
+  
+    <div id="container-switch" class="container-switch">
+      <div id="switch-light" class="switch"></div>
+    </div>
+  </section>
+
+  <script src="build/js/app.js"></script>
+
+</body>
+</html>

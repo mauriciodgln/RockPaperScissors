@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+
+
+.light {
+  background-color: v.$light;
+  color: v.$dark;
+  transition: 500ms;
+
+  .view-hands,
+  .container-hands {
+    border: solid 1px v.$dark;
+    background-color: v.$light;
+
+    &.close-hands span {
+      color: v.$dark;
+    }
+  }
+}
+
+.dark {
+  background-color: v.$dark;
+  color: v.$light;
+  transition: 500ms;
+
+  .view-hands,
+  .container-hands {
+    border: solid 1px v.$light;
+    background-color: v.$dark;
+
+    &.close-hands span {
+      color: v.$light;
+    }
+  }
+
+  .arrow {
+    .line-1,
+    .line-2 {
+      background-color: v.$light;
+    }
+  }
+}

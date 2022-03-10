@@ -1,0 +1,22 @@
+@use 'variables' as v;
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: v.$font;
+  font-size: 1.6rem;
+  max-height: 100vh;
+  max-width: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0); // Elimina fondo azul al dar click en botón en dispositivo móvil
+}
